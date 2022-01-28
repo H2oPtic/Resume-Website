@@ -38,3 +38,12 @@ function setTheme(mode){
 
     localStorage.setItem('theme', mode)
 }
+
+
+let beerClick = document.getElementsByName('beerClick')
+
+for(var i=0; beerClick.length > i; i++){
+    beerClick[i].addEventListener('click', function(){ 
+        console.log('Option clicked')
+    })
+}
